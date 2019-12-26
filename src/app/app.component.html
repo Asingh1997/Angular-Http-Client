@@ -1,0 +1,59 @@
+<div class="container" style="background: #41B3A3; width:100vh; height:100vh;">
+<div style="text-align:left;width:500px;">
+
+    <table>
+        
+        <tr>
+             <th>Name</th>
+             <th>City</th>
+        </tr>
+        <tr *ngFor = "let data of httpdata">
+            <td>{{data.name}}</td>
+                <td>{{data.address.city}}</td>
+                    
+        </tr>
+    </table>
+
+</div>
+
+<br><hr>
+
+
+<div style="text-align:left;width:500px;">
+    <table>
+        <tr>
+            <th>ID</th>
+                <th>Name of Bird</th>
+                    <th>Type of Bird</th>
+        </tr>        
+        <tr *ngFor="let data1 of httpdata1">
+            <td>{{data1.ID}}</td>
+                <td>{{data1.Name}}</td>
+                    <td>{{data1.Type}}</td>
+        </tr>
+    </table>
+</div>
+
+<br><hr>
+<div style="text-align:left;width:500px;">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+	    <th>Color</th>
+        </tr>        
+        <tr *ngFor="let data2 of httpdata2">
+            <td>{{data2.id}}</td>
+                <td>{{data2.name}}</td>
+                <td>{{data2.category}}</td>
+		<td>{{data2.color}}</td>        
+	</tr>
+    </table>
+</div>
+
+</div>
+
+
+
+
